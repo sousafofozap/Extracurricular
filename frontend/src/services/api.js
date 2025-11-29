@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://api-extracurricular.onrender.com', 
+  baseURL: 'https://extracurricular.onrender.com', 
 });
 
 api.interceptors.request.use(async (config) => {
