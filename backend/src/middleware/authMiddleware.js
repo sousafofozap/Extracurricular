@@ -14,7 +14,7 @@ const proteger = async (req, res, next) => {
       const decoded = jwt.verify(token, process.env.JWT_SECRET || "seusegredo");
 
       req.usuario = await Usuario.findByPk(decoded.id, {
-        attributes: ["id", "nome", "email", "role"], 
+        attributes: ["id", "nome", "email", "role", "horas_acumuladas"], 
       });
 
       if (!req.usuario) {
