@@ -426,6 +426,10 @@ body.menu-desktop-fechado main {
   transition: 0.2s;
 }
 
+.acessar {
+  width: 100%;
+}
+
 .acessar:hover,
 .btn-ver-mais:hover {
   background-color: #c9302c;
